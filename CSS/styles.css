@@ -1,7 +1,3 @@
-body {
-  padding: 2rem 1rem;
-}
-
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -20,6 +16,7 @@ body {
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.5rem;
+  padding: 1rem;
 }
 
 h1,
@@ -116,5 +113,33 @@ a {
 
   .badge--small {
     font-size: 1.2rem;
+  }
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-heading);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
   }
 }
