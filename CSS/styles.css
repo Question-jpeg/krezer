@@ -1,3 +1,7 @@
+body {
+  padding: 2rem 1rem;
+}
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -69,16 +73,48 @@ a {
 
 .link-arrow::after {
   content: "-->";
-  margin-left: 0.5rem;
+  margin-left: 5px;
   transition: margin 0.15s;
 }
 
 .link-arrow:hover::after {
-  margin-left: 1rem;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* Badges */
+.badge {
+  border-radius: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;  /* prevents from wrapping into a second line */
+}
+
+.badge--primary {
+  background: var(--color-primary);
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
