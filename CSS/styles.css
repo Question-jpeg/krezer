@@ -104,6 +104,7 @@ a {
   font-weight: 600;
   padding: 0.5rem 2rem;
   white-space: nowrap;  /* prevents from wrapping into a second line */
+  transition: all 0.3s;
 }
 
 .badge--primary {
@@ -112,6 +113,15 @@ a {
 
 .badge--secondary {
   background: var(--color-secondary);
+  transition: all 0.3s;
+}
+
+.domain-toggler.unselected .badge {
+  color: var(--color-heading);
+}
+
+.domain-toggler.unselected .badge--secondary {
+  background: 0;
 }
 
 .badge--small {
@@ -122,6 +132,10 @@ a {
 @media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
+  }
+
+  .block-domain__prices .badge {
+    font-size: 2rem;
   }
 
   .badge--small {
@@ -782,7 +796,7 @@ a {
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
-  max-width: 700px;
+  max-width: 830px;
   margin: 0 auto;
   color: var(--color-heading);
 }
