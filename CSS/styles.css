@@ -220,6 +220,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn .icon {
